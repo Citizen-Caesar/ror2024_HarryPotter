@@ -7,3 +7,9 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+10.time do |c|
+    Character.created(
+        name: Faker::Movies::HarryPotter.character,
+        location: Faker::Movies::HarryPotter.location,
+        house: : Faker::Movies::HarryPotter.house
+    )
